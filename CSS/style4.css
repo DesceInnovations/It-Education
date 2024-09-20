@@ -1,0 +1,333 @@
+.L{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --bg-color:var(--bg-color)
+    --second-bg-color:var(--bg-color)
+    --text-color: white
+    --main-color:
+}
+html{
+    font-size: 60%;
+    color: var(--bg-color);
+}
+.header{
+    position: sticky;
+    object-position: 100%;
+    padding: 20px;
+    background-color: #004b49;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 5;
+    margin-top: 0px;
+}
+.logo{
+    font-size: 25px;
+    color: lime;/* Green represents growth and harmony, promoting 
+    a sense of calmness and focus, ideal for learning environments. Many tech companies use blue/green hues, reinforcing
+     a connection to innovation and technology.*/
+     text-align: start;
+    font-weight: 500px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration:none;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
+    color: #ff7200;/* Orange is vibrant and energetic, representing creativity and 
+    enthusiasm, which can motivate learners.This bright color can be used for call-to-action 
+    buttons (like "Enroll Now" or "Learn More") 
+    to attract attention and encourage interaction.*/
+}
+.navbar a{
+    display: inline-flex;
+    font-size: 30px;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 400;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
+    color: #ff7200;
+}
+
+.marquee{
+   background-color: #004b49;
+   padding: 10px 0px;
+   font-size: 20px;
+   border-radius: 5px;
+ }
+.navbar a{
+    display: inline-flex;
+    font-size: 20px;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 400;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+.navbar a:hover{
+    color: #ff7200;
+    background-color: lime;
+}
+.navbar a.active{
+    color: #ff7200;
+    border-bottom: 3px solid var(--main-color);
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    cursor: pointer;
+    padding: 0;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+.image-slider {
+    margin-top: 0px;
+    position: relative;
+    max-width: 100%;
+    max-height: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.slides {
+    margin-top: opx;
+    display: none;
+    width: 100%;
+}
+.active {
+    display: block;
+} 
+.wel{
+    color: black;
+    margin-top: 10px;
+    padding: 80px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia;
+    background-image: url(../../../img/Coconut-Tree-Sunrise-at-the-Beach.jpg);
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.hea{
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+.par1{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 10px;line-height: 30px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   z-index: 3;
+   margin-top: 75px;
+  }
+  
+  .search-bar input[type="search"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: lime;
+  }
+  
+  .search-bar button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color:#ff7200;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .search-bar button[type="submit"]:hover {
+    background-color:#ff7200;
+  }
+
+.blog-posts {
+	padding: 10px;
+    box-shadow: 0 0 10px grey;
+}
+/* flexing the main blog post and recent posts */
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px grey;
+}
+.post {
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 10px;
+    background-color: silver;
+}
+.pagination {
+	margin-top: 20px;
+	text-align: center;
+    background-color: silver;
+    border-radius: 5px;
+    text-shadow: gray;
+}
+
+.pagination button {
+	margin: 0 10px;
+}
+.sidebar {
+	background-color: silver;
+	padding: 10px;
+	margin-left: 20px;
+    border-radius: 5px;
+    margin:80px;
+    text-wrap: nowrap;
+    width: 300px;
+    height: 310px;
+}
+.over{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+	margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 15px;
+	margin: 0;
+}
+
+.sidebar li {
+	margin-bottom: 10px;
+    font-size: 15px;
+    font-family: 'alice';
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: #337;
+    color: black;
+}
+
+.readmore{
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid #ff7200;
+    border-bottom: 10px;
+    color: #ff7200;
+    padding: 10px;
+    background-color: lime;
+}
+
+
+footer{
+    box-shadow: 0 0 10px  lime;
+    font-size: 20px;
+    font-family: Arial;
+    border:1px ;
+    border-radius: 5px;
+    background-color: #004b49;
+    color: black;
+    margin-bottom: 0px;
+    padding: 20px;
+    margin-top: 50px;
+    bottom: 0;
+    text-align: center;
+    object-fit: cover;
+
+}
+.footer-content{
+    max-height: 800px;
+    margin: 0;
+    color: black;
+
+}
+.footer-content ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-content ul li{
+    display: inline;
+    margin: 0 0;
+}
+.list a{
+    display: inline;
+    color: grey;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.co{
+    color: lime;
+}
+.cover{
+    margin-top: 10px;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <title>My Blog</title>
+          <link rel="stylesheet" href="CSS/style3.css">
+          <link rel="icon" type="image/jpg" href="img/DB.jpg">
+    </head>
+    <body bgcolor="#eof7f7">
+        <MARQUEE class="marquee"  loop="-1" scrollamount="2" width="100%"><STRONG><ALIGN="bottom">WELCOME TO DESCE INNOVATIONS!!!</ALIGN></STRONG></MARQUEE> 
+        <!--this is the header-->
+        <div>
+            <header class="header">
+            
+                <div class="navbar">
+                    <h3 class="logo"><center>DESCE <span>INNOVATIONS</span></center></h3>
+                    <a href="index.html">Home</a>
+                    <div class="dropdown">
+                    <a href="Blog.html">Blog</a>
+                        <div class="dropdown-content">
+                            <a href="Solutions.html">Solution</a>
+                            <a href="Impact.html">Impact</a>
+                        </div>
+                    </div>
+                    <a href="About.html"  class="active">About</a>
+                    <a href="Contact.html">Contact</a>
+                    <a href="Service.html">Service</a>
+                </div>
+        </header>
+            <div class="image-slider">
+                <img class="slides active" src="img/c1.jpg" height="500px" width="100%" alt="Image 1">
+                <img class="slides active" src="img/c2.png" height="500px" width="100%" alt="Image 2">
+                <img class="slides active" src="img/c3.jpg" height="500px" width="100%" alt="Image 3">
+                <img class="slides active" src="img/c5.png" height="500px" width="100%" alt="Image 4">
+                <img class="slides active" src="img/c6.jpg" height="500px" width="100%" alt="Image 4">
+                <img class="slides active" src="img/computer-1869236_1280.jpg" height="500px" width="100%" alt="Image 4">
+            </div>
+            <!--this about me-->
+            <div class="dis">
+                <p class="dis2">At <span class="sp1">DESCE</span> <span class="sp2">INNOVATIONS</span>, we are passionate about technology and dedicated to making IT education accessible to everyone. Founded by a team of experienced IT professionals and educators, our platform aims to bridge the gap between complex technical concepts and practical knowledge.
+
+                   <h1 class="mo"> MY VISION</h1>
+                   <p>"I envision a world where anyone, regardless of their background, can gain the skills necessary 
+                    to succeed in the tech industry. By providing high-quality educational content, I strive to 
+                    inspire confidence and curiosity in our learners.To be a leading platform in IT education, 
+                    recognized for transforming lives and careers through technology. We envision a future where 
+                    everyone, regardless of background, has the opportunity to thrive in the digital economy, contributing to a
+                     more skilled workforce and a more inclusive, innovative society."</p>
+
+                     <h1 class="mo"> MY MISSION</h1>
+                   <p>"To empower individuals through accessible, high-quality IT education that fosters technical skills, 
+                    critical thinking, and lifelong learning. We aim to bridge the skills gap in the technology industry by 
+                    providing innovative learning resources, expert guidance, and a supportive community that inspires confidence
+                     and competence in the digital world."
+
+                    Vision Statement</p>
+                    
+                    
+                    <h1 class="mo">What I Offer</h1>
+                    
+                    <p class="p"> <span>In-Depth Articles:</span> Comprehensive guides and tutorials on a variety of IT topics, tailored for all skill levels.
+                    <span>
+                        <p><span>Video Content:</span> Engaging video tutorials that simplify complex concepts and demonstrate practical applications.</p>
+                   <p> <span>Community Engagement:</span> A vibrant forum where learners can ask questions, share insights, and collaborate on projects.</p>
+                    <p><span>Regular Updates:</span> Stay informed with the latest trends and advancements in technology through our regularly updated content.</p>
+                   <h5> Meet My Team </h5>
+                   <p>Our team consists of passionate educators, industry experts, and tech enthusiasts who are committed to sharing their knowledge and experience.
+                     We believe in the power of continuous learning and are here to support you every step of the way.</p> 
+                    
+                    Join us at<span> DESCE INNOVATION </span> and embark on an exciting journey to expand your IT knowledge and skills. Together, we can explore the vast opportunities that technology has to offer!</p>
+            </div>
+            <!--this is the footer-->
+            <footer>
+                <div class="footer-content">
+                    <div class="co">
+                    <p class="copyright">&copy;2024 DESCE INNOVATIONS | ALL RIGHT RESERVED</p><!--ampersand-->
+                    <p>Follow me on :</p>
+                    </div>
+                    <ul class="list">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </footer>
+            <script>
+                let slideIndex = 0;
+                function showSlides() {
+                    const slides = document.getElementsByClassName("slides");
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    slides[slideIndex - 1].style.display = "block";  
+                    setTimeout(showSlides, 3000); // Change image every 3 seconds
+                }
+                window.onload = function() {
+                    showSlides();
+                };
+            </script>
+    </body>
+</html>

@@ -1,0 +1,294 @@
+html{
+    font-size: 60%;
+    color: var(--bg-color);
+}
+.header{
+    position: sticky;
+    object-position: 100%;
+    padding: 20px;
+    background-color: #004b49;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 5;
+    margin-top: 0px;
+}
+.logo{
+    font-size: 25px;
+    color: lime;/* Green represents growth and harmony, promoting 
+    a sense of calmness and focus, ideal for learning environments. Many tech companies use blue/green hues, reinforcing
+     a connection to innovation and technology.*/
+     text-align: start;
+    font-weight: 500px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration:none;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
+    color: #ff7200;/* Orange is vibrant and energetic, representing creativity and 
+    enthusiasm, which can motivate learners.This bright color can be used for call-to-action 
+    buttons (like "Enroll Now" or "Learn More") 
+    to attract attention and encourage interaction.*/
+}
+.navbar a{
+    display: inline-flex;
+    font-size: 20px;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 400;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
+    color: #ff7200;
+}
+.navbar li{
+padding: 20px;
+}
+
+.navbar a{
+    display: inline-flex;
+    font-size: 20px;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 400;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+.navbar a:hover{
+    color: #ff7200;
+    background-color: lime;
+}
+.marquee{
+    background-color: #004b49;
+    padding: 10px 0px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.navbar a.active{
+    color: #ff7200;
+    border-bottom: 3px solid var(--main-color);
+}
+.cm{
+    text-align: center;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    cursor: pointer;
+    padding: 0;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+.menu-icon{
+    font-size: 10px;
+    color: #ff7200;
+    display: contents;
+}
+.container{
+    padding: 200px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: #ff7200;
+    object-fit:cover;
+    justify-content:space-between;
+}
+span{
+    color:#ff7200;
+}
+.logo span{
+    color: #ff7200;
+}
+.Home-content h1{
+    margin: 50px;
+    font-size: 20PX;
+    text-align: center;
+
+
+}
+.logo-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+.Home-img{
+    border-radius: 500000PX;
+}
+.Home-img img{
+    position: relative;
+    top: 50px;
+    width: 300px;
+    border-radius: 100px;
+    box-shadow: #ff7200;
+    cursor: pointer;
+    transition: 0.4s eaase-in-out;
+}
+.Home-img img:hover{
+    box-shadow: #ff7200;
+}
+.search-bar {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   z-index: 3;
+   margin-top: 115px;
+  }
+  
+  .search-bar input[type="search"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: lime;
+  }
+  
+  .search-bar button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color:#ff7200;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .search-bar button[type="submit"]:hover {
+    background-color:#ff7200;
+  }
+  .heading{
+    color: #ff7200;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+  }
+  .heading span{
+    color: black;
+  }
+.in{
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    text-align: center;
+    color: #004b49;
+}
+form{
+    display: flex;
+    margin-top: 90px;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-family: Georgia;
+    margin: 20px;
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+    
+
+    
+}
+form label{
+    font-weight: bold;
+}
+form input, form textarea{
+    padding: 10px;
+    border: 1px solid lime;
+    border-radius: 20px;
+
+}
+form button{
+    font-size: 20px;
+    color: #004b49;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ff7200;
+    border: 1px solid lime;
+    border-radius: 5px;
+
+}
+form button:hover{
+    background-color: #ff7200;
+    color: lime;
+}
+footer{
+    font-size: 20px;
+    font-family: Arial;
+    border:2px solid lime;
+    border-radius: 5px;
+    background-color: #004b49;
+    margin-bottom: 0px;
+    padding: 20px;
+    margin-top: 50px;
+    bottom: 0;
+    text-align: center;
+    box-shadow: 0 0 10px  lime;
+
+}
+.footer-content{
+    max-height: 800px;
+    margin: auto;
+
+}
+.footer-content ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-content ul li{
+    display: inline;
+    margin: 0 10px;
+}
+.list a{
+    display: inline;
+    color:silver;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.co{
+    color: lime;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <title>My Blog</title>
+          <link rel="stylesheet" href="CSS/style4.css">
+          <link rel="icon" type="image/jpg" href="img\DB.jpg">
+    </head>
+    <body bgcolor="#eof7f7">
+        <MARQUEE class="marquee" loop="-1" scrollamount="2" width="100%"><STRONG><ALIGN="bottom">WELCOME TO DESCE INNOVATIONS!!!</ALIGN></STRONG></MARQUEE> 
+        <!--this is the nav bar and header-->
+        <div>
+            <header class="header">
+            
+                <div class="navbar">
+                    <h3 class="logo"><center>DESCE <span>INNOVATIONS</span></center></h3>
+                    <a href="index.html">Home</a>
+                    <div class="dropdown">
+                    <a href="Blog.html"   class="active">Blog</a>
+                        <div class="dropdown-content">
+                            <a href="Solutions.html">Solution</a>
+                            <a href="Impact.html">Impact</a>
+                        </div>
+                    </div>
+                    <a href="About.html">About</a>
+                    <a href="Contact.html">Contact</a>
+                    <a href="Service.html">Service</a>
+                </div>
+        </header>
+            </header>
+           
+              
+            <div class="image-slider">
+                <img class="slides active" src="img\h.jpg" height="500px" alt="Image 1">
+                <img class="slides active" src="img\h2.jfif" height="500px" alt="Image 2">
+                <img class="slides active" src="img\h5.png" height="500px" alt="Image 3">
+                <img class="slides active" src="img\technology-785742_1280.jpg" height="500px" >
+                <img class="slides active" src="img/B1.jpg" height="500px" alt="Image 3">
+                <img class="slides active" src="img/B3.jfif" height="500px" alt="Image 3">
+                <img class="slides active" src="img/B2.jfif" height="500px" alt="Image 3">
+                <img class="slides active" src="img/B5.jpg" height="500px" alt="Image 3">
+                <img class="slides active" src="img/B6.jpg" height="500px" alt="Image 3">
+                <img class="slides active" src="img/B7.png" height="500px" alt="Image 3">
+                <img class="slides active" src="img/c1.jpg" height="500px" alt="Image 3">
+                <img class="slides active" src="img/c2.png" height="500px" alt="Image 3">
+                <img class="slides active" src="img/c5.png" height="500px" alt="Image 3">
+                <img class="slides active" src="img/c6.jpg" height="500px" alt="Image 3">
+                <img class="slides active" src="img/cj1.jpg" height="500px" alt="Image 3">
+                <img class="slides active" src="img/cy5.png" height="500px" alt="Image 3">
+                <img class="slides active" src="img/Cybersecurity-Blue.jpg" height="500px" alt="Image 3">
+                <img class="slides active" src="img/c5.png" height="500px" alt="Image 3">
+                <img class="slides active" src="img/c5.png" height="500px" alt="Image 3">
+
+
+            </div>
+            <div class="over">
+            <main>
+                <div class="container"> <!--starting main container-->
+                <div> <!--main blog post-->
+                <section class="blog-posts">
+                    <h1>Latest Blog Posts</h1>
+                    <div class="post">
+                        <h2 style="color: black; font-size: 20px;"><b>Cybersecurity</b></h2>
+                        <p class="par1">In today’s digital age, the importance of cybersecurity
+                             cannot be overstated. 
+                            With the increasing reliance on technology and the internet, cyber 
+                            threats have become more 
+                            prevalent and sophisticated. As a result, 
+                    cybersecurity education has emerged as a critical component of IT education,
+                     equipping individuals with the knowledge and skills needed to protect 
+                     sensitive information and systems.</p>
+                    <button class="readmore"><a href="CYBERSECURITY.html">READMORE</a></button>
+                    </div>
+                  <!-- Add more blog posts here -->
+                  <div class="pagination">
+                    <button>Prev</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>Next</button>
+                </div>
+            </section>
+        </div> <!--ending blog post-->
+        <div> <!--recent post on the right-->
+            <aside class="sidebar">
+            <!-- </ul> -->
+            
+          
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li><a href="Computer literacy.html">COMPUTER LITERACY</a></li>
+                    <li><a href="Net.html">NETWORKING</a></li>
+                    <li><a href="Ai.html">ARTIFICIAL INTELLIGENCE(AI)</a></li>
+                </ul>
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="Education.html">EDUCATION</a></li>
+                    <li><a href="Skills.html">SKILLS IN I.T</a></li>
+                    <li><a href="Entertainment.html">ENTERTAINMENT</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    </div> <!--ending main container-->
+        </main>
+            <footer>
+                <div class="footer-content">
+                    <div class="co">
+                    <p class="copyright">&copy;2024 DESCE INNOVATIONS| ALL RIGHT RESERVED</p><!--ampersand-->
+                    <p>Follow me on :</p>
+                    </div>
+                    <ul class="list">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </footer>
+                    <script>
+                        let slideIndex = 0;
+                        function showSlides() {
+                            const slides = document.getElementsByClassName("slides");
+                            for (let i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {slideIndex = 1}    
+                            slides[slideIndex - 1].style.display = "block";  
+                            setTimeout(showSlides, 4000); // Change image every 4 seconds
+                        }
+                        window.onload = function() {
+                            showSlides();
+                        };
+                    </script>
+    </body>
+</html>
